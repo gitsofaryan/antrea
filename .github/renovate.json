@@ -1,9 +1,9 @@
 {
   "extends": ["config:base"],
   "enabledManagers": ["gomod", "github-actions"],
-  "open-pull-requests-limit": 5,
+  "prConcurrentLimit": 5,
   "labels": ["dependencies"],
-  "schedule": ["daily"],
+  "schedule": ["every day"],
   "dependencyDashboard": true,
   "platformAutomerge": true,
   "baseBranches": ["main", "release-1.15", "release-1.14", "release-1.13", "release-test"],
